@@ -1,5 +1,7 @@
 # EFCore Snippets Visual Studio Code Extension
 
+https://marketplace.visualstudio.com/items?itemName=julielerman.efcore-snippets
+
 This extension contains a number of snippets that you may find useful when writing C# code against Entity Framework Core.
 
 ## Features
