@@ -2,7 +2,7 @@
     "name": "efcore-snippets",
     "displayName": "EFCore Snippets",
     "description": "Snippets to provide commonly needed methods when writing code for EF Core",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "publisher": "julielerman",
      "repository": {
         "type": "git",
