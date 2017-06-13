@@ -24,9 +24,9 @@ These snippets will get added to your csharp snippets.
 
 ## Requirements
 
-Requires Microsoft.EntityFrameworkCore via NuGet
+none
 
-### 0.0.1
+### 0.0.4
 
 Testing
 
