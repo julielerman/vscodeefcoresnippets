@@ -26,7 +26,7 @@ Adds a new constructor to allow alternate provider for testing. Includes a param
 
 none
 
-### 0.0.4
+### 0.0.5
 
 Testing
 
