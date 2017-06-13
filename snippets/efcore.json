@@ -1,0 +1,46 @@
+{
+   "DbContext OnConfiguring": {
+        "prefix": "override onconfiguring",
+        "body": [
+            "protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {",
+              "   base.OnConfiguring(optionsBuilder);",
+            "}"
+        ]
+    },
+     
+        "DbContext OnModelCreating": {
+        "prefix": "override onmodelcreating",
+        "body": [
+            "protected override void OnModelCreating(ModelBuilder modelBuilder)",
+            "{",
+            "   base.OnModelCreating(modelBuilder);",
+            "}"
+        ]
+        },
+
+    "Override context for plural table names": {
+        "prefix": "override onmodelcreating plural",
+        "body": [
+            "protected override void OnModelCreating(ModelBuilder modelBuilder) {",
+            "//quick and dirty takes care of my entities not all scenarios",
+            "foreach (var entity in modelBuilder.Model.GetEntityTypes())",
+            "{",
+            "    modelBuilder.Entity(entity.Name).ToTable(entity.ClrType.Name + \"s\");",
+            "       modelBuilder.Entity(entity.Name).Ignore(\"ObjectState\");",
+            "}",
+            "}"
+        ],
+        "description": "override context to pluralize table names via simple added s"
+    },
+    "Constructor overload for DbContext": {
+        "prefix": "ctorDbContextOptions",
+        "body": [
+            "public ${dbcontext:Your DbContext}(DbContextOptions<${dbcontext:Your DbContext}> options)",
+            ": base(options){}",
+            "",
+            "public ${dbcontext:Your DbContext}(){}"
+        ],
+        "description": "constructor to allow alternate provider for testing. Includes a parameterless ctor which you will need if you are using a custom ctor"
+    }
+
+}
