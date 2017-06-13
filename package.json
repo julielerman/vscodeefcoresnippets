@@ -1,8 +1,8 @@
 {
-    "name": "efcore",
-    "displayName": "EFCore",
+    "name": "efcore-snippets",
+    "displayName": "EFCore Snippets",
     "description": "Snippets to provide commonly needed methods when writing code for EF Core",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "julielerman",
     "engines": {
         "vscode": "^1.12.0"
@@ -14,7 +14,7 @@
         "snippets": [
             {
                 "language": "csharp",
-                "path": "./snippets/efcore.json"
+                "path": "./snippets/csharp.json"
             }
         ]
     }

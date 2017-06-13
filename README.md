@@ -1,4 +1,4 @@
-# efcore README
+# EFCore Snippets Visual Studio Code Extension
 
 This extension contains a number of snippets that you may find useful when writing C# code against Entity Framework Core.
 
