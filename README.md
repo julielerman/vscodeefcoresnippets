@@ -21,8 +21,6 @@ Creates OnModelCreating with logic to pluralize the table names of each of the m
 
 Adds a new constructor to allow alternate provider for testing. Includes a parameterless ctor which you will need if you are using a custom ctor
 
-These snippets will get added to your csharp snippets.
-
 
 ## Requirements
 
