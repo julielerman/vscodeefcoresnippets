@@ -30,7 +30,7 @@
         "snippets": [
             {
                 "language": "csharp",
-                "path": "./snippets/csharp.json"
+                "path": "./snippets/efcore.json"
             }
         ]
     }

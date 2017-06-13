@@ -1,6 +1,6 @@
 {
    "DbContext OnConfiguring": {
-        "prefix": "override onconfiguring",
+        "prefix": "ef override onconfiguring",
         "body": [
             "protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {",
               "   base.OnConfiguring(optionsBuilder);",
@@ -9,7 +9,7 @@
     },
      
         "DbContext OnModelCreating": {
-        "prefix": "override onmodelcreating",
+        "prefix": "ef override onmodelcreating",
         "body": [
             "protected override void OnModelCreating(ModelBuilder modelBuilder)",
             "{",
@@ -19,7 +19,7 @@
         },
 
     "Override context for plural table names": {
-        "prefix": "override onmodelcreating plural",
+        "prefix": "ef override onmodelcreating plural",
         "body": [
             "protected override void OnModelCreating(ModelBuilder modelBuilder) {",
             "//quick and dirty takes care of my entities not all scenarios",
@@ -33,7 +33,7 @@
         "description": "override context to pluralize table names via simple added s"
     },
     "Constructor overload for DbContext": {
-        "prefix": "ctorDbContextOptions",
+        "prefix": "ef ctorDbContextOptions",
         "body": [
             "public ${dbcontext:Your DbContext}(DbContextOptions<${dbcontext:Your DbContext}> options)",
             ": base(options){}",
